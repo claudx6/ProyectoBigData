@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géneros más Escuchados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+</head>
+
+<body>
+    <div class="head">
+        <header id="head">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/musiclogo.png') }}" alt="Tropical Cloud" id="header-img">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="/home">Inicio</a></li>
+                    <li><a href="/encontrar">Buscador artista</a></li>
+                    <li><a href="/graficos">Gráficos</a></li>
+                    <li><a href="/encontrarCancion">Buscador canción</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main> 
+        <div class="container">
+            <div class="topgeneros">
+                <h1>Géneros más escuchados (2010-2019)</h1>
+                <br>
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopGeneros.png') }}">
+                <br>
+                <br>
+                <p>En esta gráfica se observa que los géneros más populares son dance pop, pop y hip hop</p>
+                <br>
+                <br>
+            </div>
+            <div class="generosPorAny">
+                <h1>Géneros más escuchados por año (2010-2019)</h1>
+                <br>
+                <br>
+                <img src="{{ url_for('static', filename='grafico2010.png') }}">
+                <img src="{{ url_for('static', filename='grafico2011.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='grafico2012.png') }}">
+                <img src="{{ url_for('static', filename='grafico2013.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='grafico2014.png') }}">
+                <img src="{{ url_for('static', filename='grafico2015.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='grafico2016.png') }}">
+                <img src="{{ url_for('static', filename='grafico2017.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='grafico2018.png') }}">
+                <img src="{{ url_for('static', filename='grafico2019.png') }}">
+                <br>
+                <p class="parrafo">En los anteriores gráficos podemos observar que el dance pop ha sido el género más popular y escuchado a lo largo de la última década. El segundo género más popular ha sido el pop y se puso como primer lugar en 2019, dejando al dance pop en segundo lugar. Hay que destacar que en 2013 el segundo género más escuchado fue boy band y pop quedó en tercer lugar. Podemos destacar que tanto One Direction como The Wanted fueron dos bandas que tuvieron mucha popularidad en el 2013. Por otra parte, si nos fijamos en 2016 los cinco géneros más populares son dance pop, canadian pop, british soul, electropop y canadian contemporary r&b y pop no aparece, esto se debe porque Spotify tiene una forma diferente de clasificar y podría haber clasificado todos los géneros que sean pop en un mismo y no diferenciarlo por nacionalidades. Un ejemplo es el pop canadiense que destacan artistas nacidos en Canadá como Justin Bieber, Drake y Shawn Mendes.</p>
+                <br>
+            </div>
+
+            <div class="topCantantes">
+                <h1>Cantantes más escuchados desde el 2010-2019</h1>
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes.png') }}">
+                <br>
+                <p class="parrafo">En el gráfico se puede observar los diez cantantes más populares con más canciones en el top de las listas durante la última década. El top uno ha sido Katy Perry con 17 canciones, en segundo lugar tenemos a Justin Bieber y en tercero a Rihanna. No obstante, se debe ver detalladamente cada año para apreciar si esos tres artistas han sido populares en la mayoría de los años o no porque un cantante puede tener varias canciones populares en un año pero ninguna en los siguientes años. Así podremos compararlo también como han ido evolucionando los cantantes y los tipos de géneros.</p>
+                <br>
+            </div>
+
+            <div class="cantantesPorAny">
+                <h1>Cantantes más escuchados por año (2010-2019)</h1>
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2010.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2011.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2012.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2013.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2014.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2015.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2016.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2017.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2018.png') }}">
+                <br>
+                <img src="{{ url_for('static', filename='graficoTopCantantes2019.png') }}">
+                <br>
+                <br>
+                <p class="parraf">En la gráfica de 2010 se puede observar que los artistas más escuchados fueron The Black Eyed Pease, Kesha y Christina Aguilera, los tres teniendo 4 canciones en el top de la lista. En 2011, la artista con más popularidad fue Lady Gaga con 5 pistas de dance pop, seguida de Beyoncé y Rihanna pero estas artistas no aparecen en los últimos años. Se debe comentar que tanto artistas como Kesha, The Black Eyed Peas, entre otros no vuelven a aparecer en los gráficos porque se relaciona con el declive del género dance pop que se ha visto con los gráficos circulares. También viene relacionado por el hecho de que Kesha se tomó un descanso de la música desde 2012 donde publicó su segundo álbum hasta 2017 cuando publicó su tercer album según Wikipedia, igual pasó con otros artistas que se tomaron descansos.</p>
+                <p class="parraf">Si nos fijamos en 2015, Justin Bieber consiguió tener 9 canciones de canciones en la lista de canciones más escuchadas lo cual hizo que el pop canadiense fuese el segundo género más escuchado en ese año. Además, cabe destacar que Ed Sheeran aparece por primera vez y se puso en segundo con 4 canciones.</p>
+                <p class="parraf">En conclusión, han habido diferentes cambios de artistas a lo largo de los años. Eso ha sido debido al hecho de que muchos de ellos se han tomado pausas, lo cual provocó un cambio de los géneros más escuchados cada año.</p>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <div class="foot">
+        <footer>
+            <p> © Todos los derechos reservados a Tropical Cloud</p>
+        </footer>
+    </div>
+</body>
+</html>
+

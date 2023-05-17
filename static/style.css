@@ -1,0 +1,265 @@
+/* CSS */ 
+
+html,body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Estilo del encabezado */
+
+/* LAYOUT GENERAL */
+body{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 0.5fr;
+  grid-template-areas:
+  "header"
+  "main"
+}
+/* Estilo del encabezado */
+
+#head{
+  grid-area: header;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para los enlaces del menú */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Header */
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20vh; 
+  margin-top: 40px;
+}
+.titulo h1 {
+  text-align: center;
+  background-color: transparent;
+}
+
+/* foto */
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+
+/* Container */
+.container{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+}
+
+.container h1{
+  color: black;
+  font-size: 36px;
+  text-align: center;
+}
+
+.pregunta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.texto {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  padding: 30px;
+}
+
+.texto p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+div.resultado{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+p.resultado{
+  font-size: 36px;
+}
+
+#busqueda {
+  display: flex;
+  justify-content: center;
+}
+
+main form input[type="submit"]{
+  background-color: violet;
+  border: 2px solid violet;
+  width: 10vw;
+  font-size: 14px;
+}
+
+main form input[type="submit"]:hover{
+  background-color: palevioletred;
+  border: 2px solid violet;
+  width: 10vw;
+  font-size: 14px;
+}
+
+/* Estilos para el logo */
+.logo img {
+  width: 50px;
+  height: auto;
+} */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: palevioletred;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.8rem;
+}
+
+.foot {
+  bottom: 0;
+  background-color: palevioletred;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.8rem;
+}
+
+/* error */
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error h1 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+} 
+
+.resultado {
+  margin-top: 50px;
+  padding: 30px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.nuevabusqueda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  justify-content: center;
+  padding: 30px;
+  text-align: justify;
+}
+
+.generosPorAny {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.generosPorAny img{
+  flex-basis: 50%;
+  max-width: 100%;
+  margin: 0;
+  padding: 30px;
+  text-align: justify;
+}
+
+.parrafo{
+  text-align: justify;
+  padding: 30px;
+}
+
+.topCantantes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cantantesPorAny {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cantantesPorAny img{
+  flex-basis: 50%;
+  max-width: 100%;
+  margin: 0;
+  padding: 30px;
+  text-align: justify;
+}
+
+.parraf{
+  text-align: justify;
+  padding: 30px;
+}
+ 

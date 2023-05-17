@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Top Tracks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+</head>
+
+<body>
+    <div class="head">
+        <header id="head">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/musiclogo.png') }}" alt="Tropical Cloud" id="header-img">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="/home">Inicio</a></li>
+                    <li><a href="/encontrar">Buscador artista</a></li>
+                    <li><a href="/graficos">Gráficos</a></li>
+                    <li><a href="/encontrarCancion">Buscador artista</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+    
+    <main>
+        <div class="container">
+            <h1>Top 3 canciones más escuchadas</h1>
+        </div>
+        <br>
+        <br>
+        <div class="pregunta">
+            <p class="pregunta">¿Qué artista desea buscar?</p>
+        </div>
+        <br>
+        <br>
+        <form id = "busqueda" action="{{ url_for('encontrar')}}" method="POST">
+            <label for="artista">Artista:</label>
+            <input type="text" name="artista" id="artista">
+            <input type="submit" value="Buscar">
+        </form>
+    </main>
+    <br>
+    <div class="texto">
+        <h3>Herramienta de búsqueda de canciones por artista</h3>
+        <br>
+        <p>¿Quieres conocer las tres canciones más populares de tú artista favorito o de cualquier otro? Este buscador ha sido creado para ayudarte con eso. Se conecta con la app de Spotify y le permite buscar las canciones más reproducidas de cualquier cantante.</p>
+        <p>El buscador es gratuito, solo escribe el artista en el cuadro de búsqueda y el buscador te mostrará las canciones de dicho artista.</p>
+    </div>
+    <br>
+    <div class="footer">
+        <footer>
+            <p> © Todos los derechos reservados a Tropical Cloud</p>
+        </footer>
+    </div>
+</body>
+</html>

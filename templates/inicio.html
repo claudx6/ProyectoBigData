@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Cloud - Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <div class="head">
+        <header id="head">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/musiclogo.png') }}" alt="Tropical Cloud" id="header-img">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="/home">Inicio</a></li>
+                    <li><a href="/encontrar">Buscador artista</a></li>
+                    <li><a href="/graficos">Gráficos</a></li>
+                    <li><a href="/encontrarCancion">Buscador canción</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class= "titulo">
+        <header>
+            <h1>Bienvenido a Tropical Cloud, tu página de música</h1>
+        </header>
+        <br>
+        <p>Busca canciones de tus artistas favoritos y encuentra nuevas canciones.</p>
+    </div>
+    <div class="foto">
+        <img src="{{ url_for('static', filename='images/musiclogo.png') }}" alt="Tropical Cloud" id="header-img">
+    </div>
+    <br>
+    <div class="footer">
+        <footer>
+            <p> © Todos los derechos reservados a Tropical Cloud</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Top Tracks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+<body>
+    <div class="head">
+        <header id="head">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/musiclogo.png') }}" alt="Tropical Cloud" id="header-img">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="/home">Inicio</a></li>
+                    <li><a href="/encontrar">Buscador artista</a></li>
+                    <li><a href="/graficos">Gráficos</a></li>
+                    <li><a href="/encontrarCancion">Buscador canción</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="error">
+        <h1>Error</h1>
+        <p>No se ha encontrado la canción indicada.</p>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+        <footer>
+            <p> © Todos los derechos reservados a Tropical Cloud</p>
+        </footer>
+    </div>
+</body>
+</html>

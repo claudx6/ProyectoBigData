@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar canción</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  
+</head>
+
+<body>
+    <div class="head">
+        <header id="head">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/musiclogo.png') }}" alt="Tropical Cloud" id="header-img">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="/home">Inicio</a></li>
+                    <li><a href="/encontrar">Buscador artista</a></li>
+                    <li><a href="/graficos">Gráficos</a></li>
+                    <li><a href="/encontrarCancion">Buscador canción</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <main>
+        <div class="container">
+            <h1>Buscar canción</h1>
+        </div>
+        <br>
+        <br>
+        <div class="pregunta">
+            <p class="pregunta">Cuál es la canción que desea buscar?</p>
+        </div>
+        <br>
+        <br>
+        <form id = "busqueda" action="{{ url_for('encontrarCancion')}}" method="POST">
+            <label for="cancion">Ingrese el título de la canción:</label>
+            <input type="text" name="cancion" id="cancion">
+            <input type="submit" value="Buscar">
+        </form>
+    </main>
+    <div class="texto">
+        <h3>Herramienta de búsqueda de artistas por canción</h3>
+        <br>
+        <p>¿Quieres conocer qué cantantes tienen en común la misma canción? Este buscador ha sido creado para ayudarte con eso. Se conecta con la app de Spotify y le permite encontrar canciones con el mismo título pero de diferentes artistas.</p>
+        <p>El buscador es gratuito, solo escribe el nombre de la canción en el cuadro de búsqueda y el buscador te mostrará los diferentes cantantes que tienen el mismo título en común.</p>
+    </div>
+    <br>
+    <div class="footer">
+        <footer>
+            <p> © Todos los derechos reservados a Tropical Cloud</p>
+        </footer>
+    </div>
+</body>
+</html>
+
